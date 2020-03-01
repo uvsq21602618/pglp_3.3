@@ -1,14 +1,24 @@
 package fr.uvsq.uvsq21602618.pglp_3_3;
 
-public class RobotStatique extends Robot {
-
+public class RobotStatique {
+	protected Position position;
+	protected Direction direction;
+	
 	public RobotStatique(Position pos, Direction dir) {
-		super(pos, dir);
+		this.position=pos;
+		this.direction=dir;
 	}
 	
-	@Override
-	public void avance() throws unsupportedOperationException {
-		throw new unsupportedOperationException("Cette action ne peut être réaliser par le robot statique");
+	public Direction getDirection() {
+		return this.direction;
+	}
+	
+	public Position getPosition() {
+		return this.position;
+	}
+	
+	public void avance() {
+		;
 	}
 
 }

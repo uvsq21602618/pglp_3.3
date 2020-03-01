@@ -1,14 +1,11 @@
 package fr.uvsq.uvsq21602618.pglp_3_3;
 
-public class Robot {
-	private Position position;
-	private Direction direction;
+public class Robot extends RobotStatique {
 	
 	public Robot(Position pos, Direction dir) {
-		this.position=pos;
-		this.direction=dir;
+		super(pos, dir);
 	}
-	
+
 	public void tourne() {
 		if(direction.equals(Direction.NORD)) {
 			this.direction=Direction.EST;
@@ -24,7 +21,8 @@ public class Robot {
 		}
 	}
 	
-	public void avance() throws unsupportedOperationException {
+	@Override
+	public void avance(){
 		if(direction.equals(Direction.NORD)) {
 			this.position.deplaceY(1);
 		}
@@ -39,12 +37,6 @@ public class Robot {
 		}
 	}
 	
-	public Direction getDirection() {
-		return this.direction;
-	}
 	
-	public Position getPosition() {
-		return this.position;
-	}
 
 }
