@@ -25,6 +25,7 @@ public class TestRobot {
 		Position expected=new Position(2,4);
 		R.avance();
 		
-		assertEquals(expected,R.getPosition());
+		assertEquals(expected.getY(),R.getPosition().getY());
+		assertEquals(expected.getX(),R.getPosition().getX());
 	}
 }

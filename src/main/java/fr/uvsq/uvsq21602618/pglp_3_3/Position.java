@@ -18,4 +18,11 @@ public class Position {
 		this.y=this.y+nbCase;
 	}
 	
+	public int getX() {
+		return this.x;
+	}
+	
+	public int getY() {
+		return this.y;
+	}
 }
