@@ -22,11 +22,21 @@ public class Robot {
 		else {
 			this.direction=Direction.NORD;
 		}
-		
 	}
 	
 	public void avance() {
-		
+		if(direction.equals(Direction.NORD)) {
+			this.position.y+=1;
+		}
+		else if(direction.equals(Direction.EST)) {
+			this.position.x+=1;
+		}
+		else if(direction.equals(Direction.SUD)) {
+			this.position.y-=1;
+		}
+		else {
+			this.position.x-=1;
+		}
 	}
 
 }
