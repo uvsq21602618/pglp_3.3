@@ -1,5 +1,7 @@
 package fr.uvsq.uvsq21602618.pglp_3_3;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
 
 public class TestRobot {
@@ -12,6 +14,6 @@ public class TestRobot {
 		Direction expected=Direction.EST;
 		R.tourne();
 		
-		assertEquals(expected.toString(),R.getDirection());
+		assertEquals(expected,R.getDirection());
 	}
 }

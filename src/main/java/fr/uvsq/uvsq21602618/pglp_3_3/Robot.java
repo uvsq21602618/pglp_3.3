@@ -38,5 +38,9 @@ public class Robot {
 			this.position.deplaceX(-1);
 		}
 	}
+	
+	public Direction getDirection() {
+		return this.direction;
+	}
 
 }
