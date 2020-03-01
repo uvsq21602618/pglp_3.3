@@ -42,5 +42,9 @@ public class Robot {
 	public Direction getDirection() {
 		return this.direction;
 	}
+	
+	public Position getPosition() {
+		return this.position;
+	}
 
 }

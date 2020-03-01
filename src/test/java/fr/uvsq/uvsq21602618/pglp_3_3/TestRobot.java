@@ -16,4 +16,15 @@ public class TestRobot {
 		
 		assertEquals(expected,R.getDirection());
 	}
+	
+	@Test
+	public void avanceTest() throws unsupportedOperationException {
+		Position pos=new Position(2,3);
+		Direction dir=Direction.NORD;
+		Robot R=new Robot(pos,dir);
+		Position expected=new Position(2,4);
+		R.avance();
+		
+		assertEquals(expected,R.getPosition());
+	}
 }
