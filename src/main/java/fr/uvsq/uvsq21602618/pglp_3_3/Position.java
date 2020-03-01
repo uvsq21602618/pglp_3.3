@@ -9,4 +9,13 @@ public class Position {
 		this.x=x;
 		this.y=y;
 	}
+	
+	protected void deplaceX(int nbCase) {
+		this.x=this.x+nbCase;
+	}
+	
+	protected void deplaceY(int nbCase) {
+		this.y=this.y+nbCase;
+	}
+	
 }
