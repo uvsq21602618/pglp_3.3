@@ -24,7 +24,7 @@ public class Robot {
 		}
 	}
 	
-	public void avance() {
+	public void avance() throws unsupportedOperationException {
 		if(direction.equals(Direction.NORD)) {
 			this.position.deplaceY(1);
 		}
