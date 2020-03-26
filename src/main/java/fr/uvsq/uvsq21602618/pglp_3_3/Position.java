@@ -25,16 +25,20 @@ public class Position {
     /**
      * Méthode pour déplacer le robot abscisse.
      * @param nbCase nombre de cases parcouru
+     * @return this la position
      */
-    public void deplaceX(final int nbCase) {
+    public Position deplaceX(final int nbCase) {
         this.x = this.x + nbCase;
+        return this;
     }
     /**
      * Méthode pour déplacer le robot en ordonnée.
      * @param nbCase nombre de cases parcouru
+     * @return this la position
      */
-    public void deplaceY(final int nbCase) {
+    public Position deplaceY(final int nbCase) {
         this.y = this.y + nbCase;
+        return this;
     }
     /**
      * Méthode pour récupérer la coordonnée en x.
