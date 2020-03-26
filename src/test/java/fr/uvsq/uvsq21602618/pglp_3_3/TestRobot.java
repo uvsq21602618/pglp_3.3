@@ -22,10 +22,11 @@ public class TestRobot {
 		
 		assertEquals(expected, R.getDirection());
 	}
+	/*
 	/**
 	 * Test de la méthode avance.
 	 * @throws unsupportedOperationException
-	 */
+	 *
 	@Test
 	public void avanceTest() throws unsupportedOperationException {
 		Position pos = new Position(2, 3);
@@ -36,5 +37,5 @@ public class TestRobot {
 		
 		assertEquals(expected.getY(), r.getPosition().getY());
 		assertEquals(expected.getX(), r.getPosition().getX());
-	}
+	}*/
 }

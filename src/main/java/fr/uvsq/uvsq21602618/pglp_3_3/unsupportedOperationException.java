@@ -6,6 +6,11 @@ package fr.uvsq.uvsq21602618.pglp_3_3;
  */
 public class unsupportedOperationException extends Exception {
     /**
+     * Numero.
+     */
+    private static final long serialVersionUID = 1L;
+
+    /**
      * Pour la version initiale de l'énoncé.
      * Si le robot statique tente d'avancer
      * une erreur est envoyé.
