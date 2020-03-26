@@ -26,14 +26,14 @@ public class Robot extends RobotStatique {
 	 * vers la droite.
 	 */
 	public void tourne() {
-		if(this.direction.equals(Direction.NORD)) {
-			this.direction = Direction.EST;
-		} else if (this.direction.equals(Direction.EST)) {
-			this.direction = Direction.SUD;
-		} else if (this.direction.equals(Direction.SUD)) {
-			this.direction = Direction.OUEST;
+		if(super.getDirection().equals(Direction.NORD)) {
+			super.setDirection(Direction.EST);
+		} else if (super.getDirection().equals(Direction.EST)) {
+			super.setDirection(Direction.SUD);
+		} else if (super.getDirection().equals(Direction.SUD)) {
+			super.setDirection(Direction.OUEST);
 		} else {
-			this.direction = Direction.NORD;
+			super.setDirection(Direction.NORD);
 		}
 	}
 	/**
@@ -41,14 +41,14 @@ public class Robot extends RobotStatique {
 	 * en fonction de son orientation.
 	 */
 	public void avance() {
-		if (this.direction.equals(Direction.NORD)) {
-			this.position.deplaceY(1);
-		} else if (this.direction.equals(Direction.EST)) {
-			this.position.deplaceX(1);
-		} else if (this.direction.equals(Direction.SUD)) {
-			this.position.deplaceY(-1);
+		if (super.getDirection().equals(Direction.NORD)) {
+			super.setPosition(super.getPosition().deplaceY(1));
+		} else if (super.getDirection().equals(Direction.EST)) {
+			super.setPosition(super.getPosition().deplaceX(1));
+		} else if (super.getDirection().equals(Direction.SUD)) {
+		    super.setPosition(super.getPosition().deplaceY(-1));
 		} else {
-			this.position.deplaceX(-1);
+		    super.setPosition(super.getPosition().deplaceX(-1));
 		}
 	}
 	
