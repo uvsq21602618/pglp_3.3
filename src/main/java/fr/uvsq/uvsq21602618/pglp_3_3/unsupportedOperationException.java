@@ -4,7 +4,7 @@ package fr.uvsq.uvsq21602618.pglp_3_3;
  * @author Nathalie
  *
  */
-public class unsupportedOperationException extends Exception {
+public class UnsupportedOperationException extends Exception {
     /**
      * Numero.
      */
@@ -16,7 +16,7 @@ public class unsupportedOperationException extends Exception {
      * une erreur est envoyé.
      * @param message Le message d'erreur
      */
-	public unsupportedOperationException (String message) {
-		super(message);
-	}
+    public UnsupportedOperationException(final String message) {
+        super(message);
+    }
 }

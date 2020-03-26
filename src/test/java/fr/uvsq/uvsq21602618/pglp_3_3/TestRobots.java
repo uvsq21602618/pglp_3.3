@@ -27,7 +27,7 @@ public class TestRobots {
 	}*/
 	
 	@Test
-	public void avancerTousTest() throws unsupportedOperationException {
+	public void avancerTousTest() throws UnsupportedOperationException {
 		Position pos=new Position(2,3);
 		Direction dir=Direction.NORD;
 		RobotStatique R=new Robot(pos,dir);

@@ -15,8 +15,8 @@ public class Position {
     private int y;
     /**
      * Constructeur pour la position.
-     * @param x position en abscisse
-     * @param y position en ordonnée.
+     * @param x2 position en abscisse
+     * @param y2 position en ordonnée.
      */
     public Position(final int x2, final int y2) {
         this.x = x2;
